@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formValidator.js"></script>
+</head>
+<body>
+
+<form id="signup-form">
+    <h2>Inscription</h2>
+
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom">
+    <span class="error" id="nomError"></span>
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom">
+    <span class="error" id="prenomError"></span>
+
+    <label for="age">Âge</label>
+    <input type="number" id="age" name="age">
+    <span class="error" id="ageError"></span>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <span class="error" id="emailError"></span>
+
+    <label for="confirmEmail">Confirmation Email</label>
+    <input type="email" id="confirmEmail" name="confirmEmail">
+    <span class="error" id="confirmEmailError"></span>
+
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password">
+    <span class="error" id="passwordError"></span>
+
+    <label for="confirmPassword">Confirmation Mot de passe</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+    <span class="error" id="confirmPasswordError"></span>
+
+    <label for="cgu">
+        <input type="checkbox" id="cgu" name="cgu"> J'accepte les CGU
+    </label>
+    <span class="error" id="cguError"></span>
+
+    <button type="submit">S'inscrire</button>
+</form>
+
+<script src="formValidator.js"></script>
+</body>
+</html>
